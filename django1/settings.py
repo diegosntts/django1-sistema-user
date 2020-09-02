@@ -27,7 +27,7 @@ SECRET_KEY = 'ehb3a5aghgx+3@rry$n^exxm3mk93rjqxgcgcw*g_aj7re3iym'
 # DEBUG OFF = modo produção
 DEBUG = False
 
-ALLOWED_HOSTS = ['django1-di.herokuapp.com/'] # endereco do heroku
+ALLOWED_HOSTS = ['*'] # endereco do heroku
 
 # Application definition
 
