@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 from django.conf.urls import handler404, handler500
-
+# definindo o nome para acessar o painel do administrador
 from core import views
 urlpatterns = [
     path('hostpainel/', admin.site.urls),

@@ -4,34 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Django 1 - Index</title>
-    <link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
+    <link rel="stylesheet" href="{% static 'css/usuario.css' %}">
 </head>
 <body>
 <center>
 <h1>Sistema de Usuário</h1>
-<h3>{{titulo}}</h3>
+<h1>{{ curso }}</h1>
+<span>{{logado}}</span>
    <table border="1">
         <thead>
             <tr>
-               <th><input type="checkbox" id="#" name="scales"></th>
+               <th><input type="checkbox" id="#" name="scales"</th>
                <th>Id</th>
                <th>Nome</th>
                <th>Sobrenome</th>
-               <th>Email</th>
+               <th>Telefone</th>
                <th>Endereco</th>
-               <th>Cidade</th>
+               <th>cidade</th>
             </tr>
         </thead>
         <tbody>
-        {% for cadastro in cadastros %}
+        {% for usuario in usuarios %}
             <tr>
-            <td><input type="checkbox" id="scales" name="scales"></td>
-            <td>{{ cadastro.id }}</td>
-            <td>{{ cadastro.nome }}</td>
-            <td>{{ cadastro.sobrenome }}</td>
-            <td>{{ cadastro.email }}</td>
-            <td>{{ cadastro.endereco }}</td>
-            <td>{{ cadastro.cidade }}</td>
+            <td><input type="checkbox" id="scales" name="scales"</td>
+            <td>{{ usuario.id }}</td>
+            <td>{{ usuario.nome }}</td>
+            <td>{{ usuario.sobrenome }}</td>
+            <td>{{ usuario.telefone }}</td>
             </tr>
         {% endfor %}
         </tbody>
@@ -41,5 +40,6 @@
     <button>Excluir</button>
     <button>Sair</button>
 </center>
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
